@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: 感悟, Reggie">
+    <meta name="keywords" content="contact, Reggie">
     <meta name="description" content="奋力朝着心之所向">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: 感悟 | Reggie</title>
+    <title>contact | Reggie</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Reggie124/Reggie124.github.io/favicon.png">
     
 
@@ -331,7 +331,13 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/barrager.css">
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.barrager.js"></script>
+
+<div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -379,70 +385,80 @@
     </div>
 </div>
 
+<style>
+    #send{
+        margin-bottom: 10px;
+        width: 49%;
+        background-color: #0ba360;
+    }
+    #clear{
+        margin-bottom: 10px;
+        width: 49%;
+        background-color: #e7c65c;
+    }
+    p{
+        text-align: center;
+    }
+</style>
 <main class="content">
-
-    
-
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
-            </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tags/%E6%84%9F%E6%82%9F/" title="感悟: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="感悟" style="background-color: #F9EBEA;">感悟
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
+    <div id="contact" class="container chip-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
+                </div>
                 
             </div>
+            <!--valine评论弹幕-->
+            
         </div>
+
+        <!--其他评论card-->
+        <div class="card">
+            
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Reggie124/Reggie124.github.io/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Reggie124/Reggie124.github.io/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
     </div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-    
+<script src="https://cdn.jsdelivr.net/gh/Reggie124/Reggie124.github.io/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'fa5c97039ace1ee8f736',
+        clientSecret: 'fa2c56747f7b0544304854296189f54ca15f4d44',
+        repo: 'Reggie124.github.io',
+        owner: 'Reggie124',
+        admin: "Reggie124",
+        id: '2023-04-24T21-24-12',
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    });
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
+    gitalk.render('gitalk-container');
+</script>
+
             
+
             
-            <div class="article tag-post col s12 m6 l4" data-tags="感悟" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/04/24/wo-de-di-yi-pian-bo-ke/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/Reggie124/Reggie124.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
-                            
-                            <span class="card-title">我的第一篇博客</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Reggie
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             
+
+            
+
+            
+
+            
+
+            
+
         </div>
-    </article>
+    </div>
 </main>
-
-
 
 
     <footer class="page-footer bg-color">
